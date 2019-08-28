@@ -1,7 +1,7 @@
 import {
   REQUEST_COUNTRY,
   RECEIVE_COUNTRY
-} from "../action/types";
+} from "../actions/types";
 
 const INITIAL_STATE = {
   name: '',

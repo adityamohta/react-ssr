@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchCountries, fetchCountry } from "../../action/countries";
+import { fetchCountries, fetchCountry } from "../../actions/countries";
 import { Loading } from "../../common";
 
 const m = ({ country }) => ({ country });
