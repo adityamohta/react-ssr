@@ -7,7 +7,9 @@
     "start": "webpack-dev-server",
     "build:web": "webpack --config webpack.build.config.js",
     "build:server": "webpack --config webpack.server.config.js",
-    "build:all": "npm run build:web && npm run build:server"
+    "build:all": "npm run build:web && npm run build:server",
+    "watch:web": "webpack --config webpack.build.config.js --watch",
+    "watch:server": "webpack --config webpack.server.config.js --watch"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -24,6 +26,7 @@
     "node-sass": "^4.8.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
     "react-redux": "^7.0.3",
     "react-router-config": "^5.0.1",
     "react-router-dom": "^5.0.0",

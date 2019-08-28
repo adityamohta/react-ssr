@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { fetchCountries } from "../../actions/countries";
 import { Loading } from '../../common';
 import CountriesItem from './CountriesItem';
+import {Helmet} from "react-helmet";
 
 const m = ({ countries }) => ({ countries });
 
@@ -28,6 +29,11 @@ export default class Countries extends Component {
 
     return(
       <div className="container">
+          <Helmet>
+              <meta charSet="utf-8" />
+              <title>Health Factorial</title>
+              <link rel="canonical" href="http://mysite.com/example" />
+          </Helmet>
         <div className="countries-container">
           {data.map((item, i) => <CountriesItem key={i} {...item} />)}
         </div>
